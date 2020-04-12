@@ -66,21 +66,6 @@ module keystone() {
       }
     }
   }
- 
-  /*
-  color("blue") translate([ 0, 0, -wall_extension ])
-      cube([ wall_thickness, outer_width, wall_extension ]);
-
-  color("blue") translate([ outer_length - wall_thickness, 0, -wall_extension ])
-      cube([ wall_thickness, outer_width, wall_extension ]);
-
-  color("green") translate([ wall_thickness, 0, -wall_extension ])
-      cube([ outer_width, wall_thickness, wall_extension ]);
-
-  color("green") translate(
-      [ wall_thickness, outer_width - wall_thickness, -wall_extension ])
-      cube([ outer_width, wall_thickness, wall_extension ]);
-      */
 }
 
 module keystone_cutout(h) {
@@ -106,9 +91,6 @@ difference(){
     }
 
     translate([ outer_length + 7, 55, 9.25 ]) rotate([ 0, 180, 0 ])      keystone();
-    // translate([ outer_length + 7, outer_width + 55, -0.75 ]) rotate([ 0, 0, 180 ])
-    //     keystone();
-
 
     translate([ outer_length + 7, 16, 9.25 ]) rotate([ 0, 180, 0 ])
         keystone();
