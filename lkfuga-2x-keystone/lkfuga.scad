@@ -1,4 +1,6 @@
 
+$fn = 100;
+
 jack_length = 16.5;
 jack_width = 15;
 
@@ -105,23 +107,19 @@ difference(){
   }
 
 
-   #translate([22,  hole_far, 4.3])
+  #translate([22,  hole_far, 4.3]) 
   linear_extrude(height=20, $fn=100)
   circle(d=6);
-
-   #translate([22,  hole_cloae, 4.3])
-  linear_extrude(height=20, $fn=100)
-  circle(d=6);
+  
+  #translate([22,  hole_cloae, 4.3])
+  cylinder(d=6, h=20);
 
 
   translate([22, hole_cloae, 2.3])
-  linear_extrude(height=2, scale=6/3.0, $fn=100)
-  circle(d=3);
-
+  cylinder(d1=3, d2=6, h=2);
 
   translate([22, hole_far, 2.3])
-  linear_extrude(height=2, scale=6/3.0, $fn=100)
-  circle(d=3);
+  cylinder(d1=3, d2=6, h=2);
 }
 
 
