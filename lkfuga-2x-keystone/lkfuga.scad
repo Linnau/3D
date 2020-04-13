@@ -97,30 +97,30 @@ difference(){
 
     translate([22, hole_far, 2.3])
     linear_extrude(height=6.5, $fn=100)
-    circle(d=6.5);
+    circle(d=7.5);
 
     translate([22, hole_cloae, 2.3])
     linear_extrude(height=6.5, $fn=100)
-    circle(d=6.5);
+    circle(d=7.5);
   }
 
 
    #translate([22,  hole_far, 4.3])
   linear_extrude(height=20, $fn=100)
-  circle(d=5);
+  circle(d=6);
 
    #translate([22,  hole_cloae, 4.3])
   linear_extrude(height=20, $fn=100)
-  circle(d=5);
+  circle(d=6);
 
 
   translate([22, hole_cloae, 2.3])
-  linear_extrude(height=2, scale=5/3.0, $fn=100)
+  linear_extrude(height=2, scale=6/3.0, $fn=100)
   circle(d=3);
 
 
   translate([22, hole_far, 2.3])
-  linear_extrude(height=2, scale=5/3.0, $fn=100)
+  linear_extrude(height=2, scale=6/3.0, $fn=100)
   circle(d=3);
 }
 
